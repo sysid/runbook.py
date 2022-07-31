@@ -9,7 +9,7 @@ class Step:
     skippable: bool = False
     repeatable: bool = False
     critical: bool = False
-    
+
     @property
     def preferred_name(self):
         if self.display_name:
