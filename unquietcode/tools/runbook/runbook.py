@@ -179,7 +179,7 @@ class Runbook:
 
         # pause for some seconds to give time to read
         pause_time = 0.01 * (len(step.description) / 1.0 + len(step.description))
-        pause_time = max(pause_time, 1.10)
+        pause_time = max(pause_time, 0.10)
         pause_time = min(pause_time, 5.95)
 
         # wait before prompting

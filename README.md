@@ -10,9 +10,10 @@ The step name will be built from the method name, and the description is taken
 either from the method's own docstring or from any data returned from invoking
 the method.
 
-`skippable` = True: no justification needed
-`skippable` = False: justification needed if step is declined
-`critical`= True: step cannot be declined
+        * `repeatable` – step can be repeated when resuming
+        * `skippable` – step can be skipped by answering no, no justification needed
+        * `critical` – step cannot be skipped and must be affirmative
+        * `name` – alternative title for the step
 
 ```python
 from runbook import Runbook
